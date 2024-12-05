@@ -31,7 +31,7 @@ function Footer() {
         </Col>
         <Col md="6" className="footer-copywright">
           <h3>Mioto Takahashi</h3>
-          <h3>Data Scientist</h3>
+          <h3>AI Engineer / Data Scientist</h3>
           <ul className="footer-icons">
             <li className="social-icons">
               <a

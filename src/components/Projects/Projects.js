@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import spring_creatures from "../../Assets/Projects/spring_creatures.png";
+import spring_creatures from "../../Assets/Projects/spring_creatures/square.gif";
+import lv_fitting from "../../Assets/Projects/lv_fitting/scatter_baseline.gif";
+import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca_02.png";
 
 function Projects() {
   return (
@@ -26,7 +28,7 @@ function Projects() {
           </Col>
           <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={spring_creatures}
+              imgPath={convergent_evolution}
               isBlog={true}
               title="Bayesian Inference of Convergent Evolution in Quadrupeds"
               description="Evaluation of convergent evolution in body proportions between ceratopsians and extant quadrupeds using Bayesian inference"
@@ -36,10 +38,10 @@ function Projects() {
           </Col>
           <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={spring_creatures}
+              imgPath={lv_fitting}
               isBlog={true}
               title="Lotka-Volterra Model Population Dynamics Prediction"
-              description=""
+              description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
               tags="Mathematical Modeling, Regression, Ecology"
               articleLink="fdsaf"
             />
