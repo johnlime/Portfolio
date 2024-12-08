@@ -36,7 +36,7 @@ function ProjectCards(props) {
             Article
           </Button>
         )}
-
+        &nbsp;
         {props.ghLink && (
           <Button
             variant="primary"

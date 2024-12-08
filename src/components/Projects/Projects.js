@@ -23,7 +23,7 @@ function Projects() {
               description="A system to procedurally generate a virtual creature, or an artificial life, in a 2 dimensional physics simulation that can conduct forward locomotion in an aquatic environment"
               tags="AI, Physics Simulation, Optimization, Procedural Generation"
               ghLink="https://github.com/johnlime/spring_creatures_experiment"
-              articleLink=""
+              articleLink="projects/spring-creatures"
             />
           </Col>
           <Col md={5} className="project-card">
