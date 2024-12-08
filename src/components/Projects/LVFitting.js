@@ -24,7 +24,7 @@ function LVFitting() {
           backgroundColor: "white"
         }}>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <p><b> [Mathematical Modeling, Ecology] </b></p>
+          <p><b> [Mathematical Modeling, Regression, Ecology] </b></p>
           <h1> Fitting the Population Dynamics of Predator-Prey Ecosystem on the Lotka-Volterra Model </h1>
         </Row>
         <Row
@@ -86,7 +86,7 @@ function LVFitting() {
 
             <figure>
               <img src={scatter_baseline} alt="Example predator-prey ecosystem" style={{width:"100%"}}/>
-              <figcaption style={{textAlign: "center"}}> Example predator-prey ecosystem </figcaption>
+              <figcaption style={{textAlign: "center"}}> Example predator-prey ecosystem. Blue and red indicate prey and predator. </figcaption>
             </figure>
 
             <p> The generated population data is fit to the LV model. </p>

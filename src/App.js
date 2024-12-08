@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import SpringCreatures from "./components/Projects/SpringCreatures";
 import LVFitting from "./components/Projects/LVFitting";
+import ConvergentEvolution from "./components/Projects/ConvergentEvolution";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/spring-creatures" element={<SpringCreatures />} />
           <Route path="/projects/lv-fitting" element={<LVFitting />} />
+          <Route path="/projects/convergent-evolution" element={<ConvergentEvolution />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

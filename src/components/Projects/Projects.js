@@ -33,7 +33,7 @@ function Projects() {
               title="Bayesian Inference of Convergent Evolution in Quadrupeds"
               description="Evaluation of convergent evolution in body proportions between ceratopsians and extant quadrupeds using Bayesian inference"
               tags="Bayesian statistics, Principal Component Analysis, Regression, Biology"
-              articleLink="fdsaf"
+              articleLink="projects/convergent-evolution"
             />
           </Col>
           <Col md={5} className="project-card">
