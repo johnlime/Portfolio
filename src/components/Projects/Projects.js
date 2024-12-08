@@ -43,7 +43,7 @@ function Projects() {
               title="Lotka-Volterra Model Population Dynamics Prediction"
               description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
               tags="Mathematical Modeling, Regression, Ecology"
-              articleLink="fdsaf"
+              articleLink="projects/lv-fitting"
             />
           </Col>
         </Row>

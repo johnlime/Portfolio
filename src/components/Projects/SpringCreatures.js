@@ -66,20 +66,14 @@ function SpringCreatures() {
                 <li> Using a combination of revolute joints and prismatic joints, elastic materials were emulated in a rigid body physics simulator. </li>
                 <li> Allowed oscillatory moments of limbs. </li>
               </ul>
-            </ul>
-            <ul>
               <li> Neural Network Evolutionary Algorithm </li>
               <ul>
                 <li> Utilized the NEAT algorithm to search for the morphology of a virtual creature that can move along the x-axis the furthest.</li>
               </ul>
-            </ul>
-            <ul>
               <li> PyBox2D </li>
               <ul>
                 <li> Python wrapping of a C++ library used to simulate physics </li>
               </ul>
-            </ul>
-            <ul>
               <li> PyGame </li>
               <ul>
                 <li> Python game engine used for rendering simulation </li>
@@ -102,12 +96,19 @@ function SpringCreatures() {
               <li> 2-dimensional floating-point of width and height of the new body </li>
             </ul>
 
-            <img src={graph} alt="Diagram of procedural generation for creature morphology" style={{width:"100%"}}/>
+            <figure>
+              <img src={graph} alt="Diagram of procedural generation for creature morphology" style={{width:"100%"}}/>
+              <figcaption style={{textAlign:"center"}}> Diagram of procedural generation for creature morphology </figcaption>
+            </figure>
 
             <p> If a generated spring-prismatic joint collides with another body or joint, it merges with them. This mechanism should make complex structures, such as muscle-like mechanism over 2 bodies and a revolute joint. </p>
 
             <p> The followiing is a demonstration of a procedurally generated creature. </p>
-            <img src={demo} alt="Demonstration of a procedurally generated creature" style={{width:"100%"}}/>
+
+            <figure>
+              <img src={demo} alt="Demonstration of a procedurally generated creature" style={{width:"100%"}}/>
+              <figcaption style={{textAlign:"center"}}> Demonstration of a procedurally generated creature </figcaption>
+            </figure>
 
             <p> NEAT algorithm was used to search for the configuration of the neural network that would enable the generated morphology to conduct locomotion alongside the x-axis the best. </p>
 
@@ -125,7 +126,11 @@ function SpringCreatures() {
 
             <h2> Result </h2>
             <p> The NEAT algorithm was successfully able to generate that propels itself forward along the x-axis. </p>
-            <img src={square} alt="Resulting forward-locomoting creature" style={{width:"100%"}}/>
+
+            <figure>
+              <img src={square} alt="Resulting forward-locomoting creature" style={{width:"100%"}}/>
+              <figcaption style={{textAlign:"center"}}> Resulting forward-locomoting creature </figcaption>
+            </figure>
           </Col>
           <Col
             md={2}
