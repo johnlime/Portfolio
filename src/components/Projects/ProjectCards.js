@@ -29,7 +29,7 @@ function ProjectCards(props) {
           <Button
             variant="primary"
             href={props.articleLink}
-            target="_blank"
+            target="_self"
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;

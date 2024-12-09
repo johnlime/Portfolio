@@ -18,7 +18,6 @@ function SpringCreatures() {
       style = {{
         lineHeight: 2.2
       }}>
-      <Particle />
       <Container
         style = {{
           color: "black",

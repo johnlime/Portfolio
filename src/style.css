@@ -548,6 +548,7 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+  z-index: -1;
 }
 
 .tech-icons {
@@ -746,14 +747,4 @@ button:focus {
 .profession-name{
   color: white;
   padding-top: 20px;
-}
-
-page{
-    flexDirection: 'row';
-    backgroundColor: '#E4E4E4';
-  }
-section {
-  margin: 10;
-  padding: 10;
-  flexGrow: 1;
 }

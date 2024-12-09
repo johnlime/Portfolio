@@ -19,7 +19,7 @@ function Home2() {
               ABOUT ME
             </h1>
             <p className="home-about-body">
-              Software engineer and data scientist, with a background in
+              AI engineer and data scientist, with a background in
               <b className="highlight"> deep reinforcement learning, evolutionary algorithms, agent-based modeling, and Bayesian statistics </b>. Interested in bringing unique approach to robotic control systems, video game AI behaviors, and simulations.
             </p>
           </Col>

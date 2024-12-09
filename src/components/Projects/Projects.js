@@ -9,11 +9,12 @@ import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
-        <h1 className="project-heading">
-          <strong class="highlight"> Significant Works </strong>
-        </h1>
+        <Row style={{ justifyContent: "center"}}>
+          <h1 className="project-heading">
+            <strong class="highlight"> Significant Works </strong>
+          </h1>
+        </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={5} className="project-card">
             <ProjectCard

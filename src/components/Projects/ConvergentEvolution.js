@@ -21,7 +21,6 @@ function ConvergentEvolution() {
       style = {{
         lineHeight: 2.2
       }}>
-      <Particle />
       <Container
         style = {{
           color: "black",
@@ -114,12 +113,18 @@ function ConvergentEvolution() {
           </Col>
         </Row>
         <Row className="resume">
-          <EmbedPDF
-            companyIdentifier="react-viewer"
-            mode="inline"
-            style={{ width: 900, height: 800 }}
-            documentURL="../../Assets/Projects/convergent_evolution/article.pdf"
-          />
+          <Col md={10} style={{justifyContent: "left"}}>
+            <EmbedPDF
+              companyIdentifier="react-viewer"
+              mode="inline"
+              style={{
+                position: "relative",
+                width: "100%",
+                height: 800
+              }}
+              documentURL={pdf}
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
