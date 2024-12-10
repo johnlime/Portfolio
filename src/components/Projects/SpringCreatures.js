@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
 

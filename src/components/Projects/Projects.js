@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import spring_creatures from "../../Assets/Projects/spring_creatures/square.gif";
 import lv_fitting from "../../Assets/Projects/lv_fitting/scatter_baseline.gif";
 import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca_02.png";

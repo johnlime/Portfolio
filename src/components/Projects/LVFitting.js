@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
 import scatter_baseline from "../../Assets/Projects/lv_fitting/scatter_baseline.gif"
