@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import spring_creatures from "../../Assets/Projects/spring_creatures/square.gif";
 import lv_fitting from "../../Assets/Projects/lv_fitting/scatter_baseline.gif";
 import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca_02.png";
+import diayn from "../../Assets/Projects/diayn/diayn_00.gif";
 
 function Projects() {
   return (
@@ -44,6 +45,17 @@ function Projects() {
               description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
               tags="Mathematical Modeling, Regression, Ecology"
               articleLink="projects/lv-fitting"
+            />
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCard
+              imgPath={diayn}
+              isBlog={true}
+              title="Dirichlet DIAYN"
+              description="Implemented the proximal policy optimization (PPO) and hierarchical reinforcement learning algorithm, Diversity Is All You Need (DIAYN) and examined the effect of utilizing Dirichlet distribution in DIAYN"
+              tags="Hierarchical Reinforcement Learning, Machine Learning, AI, Control Systems, Robotics"
+              ghLink="https://github.com/johnlime/RlkitExtension"
+              articleLink="projects/diayn"
             />
           </Col>
         </Row>

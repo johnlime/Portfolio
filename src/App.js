@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
+
 import Projects from "./components/Projects/Projects";
 import SpringCreatures from "./components/Projects/SpringCreatures";
 import LVFitting from "./components/Projects/LVFitting";
 import ConvergentEvolution from "./components/Projects/ConvergentEvolution";
+import DirichletDIAYN from "./components/Projects/DirichletDIAYN";
+
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
@@ -42,6 +45,7 @@ function App() {
           <Route path="/projects/spring-creatures" element={<SpringCreatures />} />
           <Route path="/projects/lv-fitting" element={<LVFitting />} />
           <Route path="/projects/convergent-evolution" element={<ConvergentEvolution />} />
+          <Route path="/projects/diayn" element={<DirichletDIAYN />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
