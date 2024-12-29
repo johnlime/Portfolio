@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
+import Button from "react-bootstrap/Button";
 
 import pdf from "../../Assets/Projects/convergent_evolution/article.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -114,6 +115,15 @@ function ConvergentEvolution() {
           </Row>
           <Row className="resume">
             <Col md={10} style={{justifyContent: "left"}}>
+              <Button
+                variant="primary"
+                href={pdf}
+                target="_blank"
+                style={{ maxWidth: "250px" }}
+              >
+                <AiOutlineDownload />
+                &nbsp;Download Paper
+              </Button>
               <EmbedPDF
                 companyIdentifier="react-viewer"
                 mode="inline"

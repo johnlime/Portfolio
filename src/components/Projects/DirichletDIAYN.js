@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
+import Button from "react-bootstrap/Button";
 
 import ppo from "../../Assets/Projects/diayn/ppo.gif";
 import diayn from "../../Assets/Projects/diayn/diayn_01.gif";
@@ -153,6 +154,15 @@ function DirichletDIAYN() {
           <Row className="resume">
             <h2> Paper </h2>
             <Col md={10} style={{justifyContent: "left"}}>
+              <Button
+                variant="primary"
+                href={pdf}
+                target="_blank"
+                style={{ maxWidth: "250px" }}
+              >
+                <AiOutlineDownload />
+                &nbsp;Download Paper
+              </Button>
               <EmbedPDF
                 companyIdentifier="react-viewer"
                 mode="inline"
@@ -168,6 +178,15 @@ function DirichletDIAYN() {
           <Row className="resume">
             <h2> Proposal Poster </h2>
             <Col md={10} style={{justifyContent: "left"}}>
+              <Button
+                variant="primary"
+                href={proposal_pdf}
+                target="_blank"
+                style={{ maxWidth: "250px" }}
+              >
+                <AiOutlineDownload />
+                &nbsp;Download Poster
+              </Button>
               <EmbedPDF
                 companyIdentifier="react-viewer"
                 mode="inline"
