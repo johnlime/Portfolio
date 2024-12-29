@@ -42,10 +42,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/spring-creatures" element={<SpringCreatures />} />
-          <Route path="/projects/lv-fitting" element={<LVFitting />} />
-          <Route path="/projects/convergent-evolution" element={<ConvergentEvolution />} />
-          <Route path="/projects/diayn" element={<DirichletDIAYN />} />
+          <Route path="/spring-creatures" element={<SpringCreatures />} />
+          <Route path="/lv-fitting" element={<LVFitting />} />
+          <Route path="/convergent-evolution" element={<ConvergentEvolution />} />
+          <Route path="/diayn" element={<DirichletDIAYN />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
