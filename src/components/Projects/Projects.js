@@ -24,7 +24,7 @@ function Projects() {
               description="A system to procedurally generate a virtual creature, or an artificial life, in a 2 dimensional physics simulation that can conduct forward locomotion in an aquatic environment"
               tags="AI, Physics Simulation, Optimization, Procedural Generation"
               ghLink="https://github.com/johnlime/spring_creatures_experiment"
-              articleLink="spring-creatures"
+              articleLink="#/spring-creatures"
             />
           </Col>
           <Col md={5} className="project-card">
@@ -34,7 +34,7 @@ function Projects() {
               title="Bayesian Inference of Convergent Evolution in Quadrupeds"
               description="Evaluation of convergent evolution in body proportions between ceratopsians and extant quadrupeds using Bayesian inference"
               tags="Bayesian statistics, Principal Component Analysis, Regression, Biology"
-              articleLink="convergent-evolution"
+              articleLink="#/convergent-evolution"
             />
           </Col>
           <Col md={5} className="project-card">
@@ -44,7 +44,7 @@ function Projects() {
               title="Lotka-Volterra Model Population Dynamics Prediction"
               description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
               tags="Mathematical Modeling, Regression, Ecology"
-              articleLink="lv-fitting"
+              articleLink="#/lv-fitting"
             />
           </Col>
           <Col md={5} className="project-card">
@@ -55,7 +55,7 @@ function Projects() {
               description="Implemented the proximal policy optimization (PPO) and hierarchical reinforcement learning algorithm, Diversity Is All You Need (DIAYN) and examined the effect of utilizing Dirichlet distribution in DIAYN"
               tags="Hierarchical Reinforcement Learning, Machine Learning, AI, Control Systems, Robotics"
               ghLink="https://github.com/johnlime/RlkitExtension"
-              articleLink="diayn"
+              articleLink="#/diayn"
             />
           </Col>
         </Row>

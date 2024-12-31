@@ -40,14 +40,14 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/Portfolio" element={<Home />} />
-          <Route path="/Portfolio/projects" element={<Projects />} />
-          <Route path="/Portfolio/spring-creatures" element={<SpringCreatures />} />
-          <Route path="/Portfolio/lv-fitting" element={<LVFitting />} />
-          <Route path="/Portfolio/convergent-evolution" element={<ConvergentEvolution />} />
-          <Route path="/Portfolio/diayn" element={<DirichletDIAYN />} />
-          <Route path="/Portfolio/resume" element={<Resume />} />
-          <Route path="/Portfolio/*" element={<Navigate to="/Portfolio"/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/spring-creatures" element={<SpringCreatures />} />
+          <Route path="/lv-fitting" element={<LVFitting />} />
+          <Route path="/convergent-evolution" element={<ConvergentEvolution />} />
+          <Route path="/diayn" element={<DirichletDIAYN />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/Portfolio"/>} />
         </Routes>
         <Footer />
       </div>
