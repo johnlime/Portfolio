@@ -47,7 +47,7 @@ function App() {
           <Route path="/convergent-evolution" element={<ConvergentEvolution />} />
           <Route path="/diayn" element={<DirichletDIAYN />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/Portfolio"/>} />
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>
