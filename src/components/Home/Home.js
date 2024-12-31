@@ -18,7 +18,7 @@ function Home() {
               </h1>
 
               <h2 className="profession-name" style={{ paddingLeft: 50, textAlign: "left" }}>
-                <strong> AI Engineer </strong>
+                <strong> AI Engineer / Researcher </strong>
               </h2>
               <h2 className="profession-name" style={{ paddingLeft: 50, textAlign: "left" }}>
                 <strong> Data Scientist </strong>
