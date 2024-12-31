@@ -12,7 +12,7 @@ import DirichletDIAYN from "./components/Projects/DirichletDIAYN";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
@@ -47,7 +47,7 @@ function App() {
           <Route path="/Portfolio/convergent-evolution" element={<ConvergentEvolution />} />
           <Route path="/Portfolio/diayn" element={<DirichletDIAYN />} />
           <Route path="/Portfolio/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/Portfolio"/>} />
+          <Route path="/Portfolio/*" element={<Navigate to="/Portfolio"/>} />
         </Routes>
         <Footer />
       </div>
