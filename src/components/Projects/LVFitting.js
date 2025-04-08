@@ -47,29 +47,36 @@ function LVFitting() {
               paddingBottom: "50px",
             }}
           >
-            <h2> Overview </h2>
+            <h2><b> Highlights </b></h2> <p/>
             <ul>
-              <li> Evaluated the effect of adding a quadratic term, indicating the population capacity, to the Lotka-Volterra model on its performance in predicting population dynamics in predator-prey ecosystems. </li>
-              <li> Found that the additional quadratic term significantly increases the prediction accuracy. </li>
+              <h3> Goal </h3>
+              <p> Investigated whether including the population capacity to the Lotka-Volterra (LV) model, a numerical model of population dynamics in predator-prey ecosystems, can improve its performance in predicting population dynamics in predator-prey ecosystems. </p>
+              <h3> Approach </h3>
+              <ul>
+                <li> Developed a modified LV model that includes a quadratic term accounting for the population dynamics </li>
+                <li> Compared the prediction accuracy of the LV model and the modified model </li>
+              </ul>
+              <h3> Data Fitting and Prediction Process </h3>
+              <ul>
+                <li> Agent-Based Modeling </li>
+                <ul>
+                  <li> Modeled a discrete-time discrete-space agent-based spatial model of a predator-prey ecosystem </li>
+                  <li> Gathered population data of predator and prey species over time by running the model </li>
+                </ul>
+                <li> Curb Fitting via Evolutionary Algorithm </li>
+                <ul>
+                  <li> Utilized CMA-ES to fit the time-series population data produced by the agent-based model to the LV models </li>
+                </ul>
+                <li> Prediction using the Lotka-Volterra (LV) Models </li>
+                <ul>
+                  <li> Utilized the LV models to predict the future trajectory of the  population dynamics of predator and prey species </li>
+                  <li> Evaluated the performance of the model using mean squared error  </li>
+                </ul>
+              </ul>
+              <h3> Result </h3>
+              <p> Found that the additional population capacity significantly increases the prediction accuracy </p>
             </ul>
             <br/>
-            <h2> Highlights </h2>
-            <ul>
-              <li> Agent-Based Modeling </li>
-              <ul>
-                <li> Modeled a discrete-time discrete-space agent-based spatial model of a predator-prey ecosystem </li>
-              </ul>
-              <li> Lotka-Volterra (LV) Model </li>
-              <ul>
-                <li> Utilized the LV model to predict the future trajectory of the  population dynamics of predator and prey species </li>
-              </ul>
-              <li> Curb Fitting via Evolutionary Algorithm </li>
-              <ul>
-                <li> Utilized CMA-ES to fit the time-series population data produced by the agent-based model to the LV model </li>
-              </ul>
-            </ul>
-            <br/>
-
             <h2> Introduction </h2>
             <p>Human interventions to biological ecosystems for maintaining their stability in the population dynamics of its species, such as the predator-prey interaction, is an ongoing problem in ecological research. Prediction of the future of such population dynamics can help predict the impact of the interventions. </p>
 
@@ -105,7 +112,7 @@ function LVFitting() {
             <h2> Experiment </h2>
             <p> 200 sets of discrete time-series data for predator and prey species are generated using the agent-based model. The spatial environment for the agent-based model is of size 180x180. The initial population for the predator and prey is 100 each. Each model is run for 30 timesteps. To simplify the model fitting, only the data with non-zero values for each population and those that do not result in overflowing coefficients after fitting are included. </p>
 
-            <p> For each set of the population data, LV and LV-Hyperbolic models are fit to the first 20 timesteps using the evolutionary algorithm CMA-ES. The last 10 timesteps are used as testing data to calculate the mean squared loss per timestep. </p>
+            <p> For each set of the population data, LV and LV-Hyperbolic models are fit to the first 20 timesteps using the evolutionary algorithm CMA-ES. The last 10 timesteps are used as testing data to calculate the mean squared error per timestep. </p>
 
             <p> The entirety of the aforementioned process is repeated for 100 runs. The average loss per timestep and their 95% confidence intervals are calculated. </p>
 
