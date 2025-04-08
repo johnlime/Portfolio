@@ -18,17 +18,6 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={spring_creatures}
-              isBlog={false}
-              title="Spring Creatures"
-              description="A system to procedurally generate a virtual creature, or an artificial life, in a 2 dimensional physics simulation that can conduct forward locomotion in an aquatic environment"
-              tags="AI, Physics Simulation, Optimization, Procedural Generation"
-              ghLink="https://github.com/johnlime/spring_creatures_experiment"
-              articleLink="#/spring-creatures"
-            />
-          </Col>
-          <Col md={5} className="project-card">
-            <ProjectCard
               imgPath={convergent_evolution}
               isBlog={true}
               title="Bayesian Inference of Convergent Evolution in Quadrupeds"
@@ -56,6 +45,17 @@ function Projects() {
               tags="Hierarchical Reinforcement Learning, Machine Learning, AI, Control Systems, Robotics"
               ghLink="https://github.com/johnlime/RlkitExtension"
               articleLink="#/diayn"
+            />
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCard
+              imgPath={spring_creatures}
+              isBlog={false}
+              title="Spring Creatures"
+              description="A system to procedurally generate a virtual creature, or an artificial life, in a 2 dimensional physics simulation that can conduct forward locomotion in an aquatic environment"
+              tags="AI, Physics Simulation, Optimization, Procedural Generation"
+              ghLink="https://github.com/johnlime/spring_creatures_experiment"
+              articleLink="projects/spring-creatures"
             />
           </Col>
         </Row>

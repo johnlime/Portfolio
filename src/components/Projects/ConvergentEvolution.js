@@ -53,7 +53,7 @@ function ConvergentEvolution() {
                 paddingBottom: "50px",
               }}
             >
-              <h2> Overview </h2>
+              <h2> Goal </h2>
               <p> The detection and inference of the cause of convergence in anatomical features between phylogenetically distant taxa or clades is a topic of research in biology. </p>
 
               <p> Preliminary research have proposed hypotheses in the role of head-body proportions and head ornaments in ceratopsians and extant quadrupedal animals; however, whether there are signs of convergent evolution between the two clades is an open problem. </p>
@@ -63,7 +63,14 @@ function ConvergentEvolution() {
                 <li> Hypothesize the use of head ornaments in ceratopsians </li>
               </ul>
               <br/>
-              <h2> Highlights </h2>
+              <h2> Datasets </h2>
+              <ul>
+                <li> Basal skull length, femur length, and humerus length for 55 ceratopsian taxa and 118 taxa of extinct dinosaurs, extant reptiles, and extant mammals  <br/> Collin S. Vanburen, Nicol ́as E. Campione, and David C. Evans. Head size, weaponry, and cervical adaptation: Testing craniocervical evolutionary hypotheses in Ceratopsia. Evolution, 69(7):1728–1744, 2015. </li>
+                <li> Skull length, head-body length, or total body length, and body mass for 404 extant mammalian taxa <br/> Russell K. Engelman. Author Correction: Occipital condyle width (OCW) is a highly accurate predictor of body mass in therian mammals (BMC Biology, (2022), 20, 1, (37), 10.1186/s12915-021-01224-9). BMC Biology, 20(1):1–44, 2022. </li>
+                <li> Femur length, femur circumference, humerus length, humerus circumference, and body mass for 241 extant reptilian and mammalian quadrupedal taxa <br/> Nicol ́as E. Campione and David C. Evans. A universal scaling relationship between body mass and proximal limb bone dimensions in quadrupedal terrestrial tetrapods. BMC Biology, 10, 2012. </li>
+              </ul>
+              <br/>
+              <h2> Process </h2>
               <ul>
                 <li> Data Imputation </li>
                 <ul>
@@ -90,18 +97,12 @@ function ConvergentEvolution() {
                 <li> The log p-values for the null hypothesis, in which the mean of the distribution for the measurements for ceratopsians is in the distribution for the those of extant quadrupeds, is shown to have 95% statistical significance. </li>
                 <li> The 95% confidence intervals of each distribution are shown to not overlap, indicating that the 2 datasets are in different distributions. </li>
               </ul>
+              <br/>
 
               <h2> Discussion </h2>
               <p> The similarities in mean of head-body ratio between the ceratopsians and extant quadrupedal animals may indicate that the body size of a quadrupedal animal from both clades is affected by both its diet and the degree of thermoregulation its head is able to conduct. </p>
 
               <p> A significant difference in phenotypic variation between the 2 clades, as indicated by the lack of overlap in the confidence intervals, may be caused by the difference in the environments between the mesozoic and cenozoic era. </p>
-
-              <h2> Datasets </h2>
-              <ul>
-                <li> Basal skull length, femur length, and humerus length for 55 ceratopsian taxa and 118 taxa of extinct dinosaurs, extant reptiles, and extant mammals  <br/> Collin S. Vanburen, Nicol ́as E. Campione, and David C. Evans. Head size, weaponry, and cervical adaptation: Testing craniocervical evolutionary hypotheses in Ceratopsia. Evolution, 69(7):1728–1744, 2015. </li>
-                <li> Skull length, head-body length, or total body length, and body mass for 404 extant mammalian taxa <br/> Russell K. Engelman. Author Correction: Occipital condyle width (OCW) is a highly accurate predictor of body mass in therian mammals (BMC Biology, (2022), 20, 1, (37), 10.1186/s12915-021-01224-9). BMC Biology, 20(1):1–44, 2022. </li>
-                <li> Femur length, femur circumference, humerus length, humerus circumference, and body mass for 241 extant reptilian and mammalian quadrupedal taxa <br/> Nicol ́as E. Campione and David C. Evans. A universal scaling relationship between body mass and proximal limb bone dimensions in quadrupedal terrestrial tetrapods. BMC Biology, 10, 2012. </li>
-              </ul>
             </Col>
             <Col
               md={2}

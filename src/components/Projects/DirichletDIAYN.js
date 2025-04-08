@@ -50,7 +50,7 @@ function DirichletDIAYN() {
             }}
           >
             <Col md={10} style={{justifyContent: "left"}}>
-              <p>The following work was produced as a researchh project in the Jin Nakazawa Lab at Keio University (2018 - 2019).</p>
+              <p>The following work was produced as a research project in the Jin Nakazawa Lab in conjunction with the Masashi Aono Lab at Keio University (2018 - 2019).</p>
               <p> Github: </p>
               <a href="https://github.com/johnlime/RlkitExtension"> https://github.com/johnlime/RlkitExtension </a>
             </Col>
@@ -65,60 +65,74 @@ function DirichletDIAYN() {
                 paddingBottom: "50px",
               }}
             >
-              <h2> Overview </h2>
-              <p> The application of robotic control with reinforcement learning on bumpy landscapes is a challenging task because of the necessity of generation of detailed movements. Although preliminary work, DIAYN, applied to hierarchical reinforcement learning performs well on some environments, the complexity of generated tasks and its compatible environments can be limited. We propose a solution to generate more diverse tasks and enable an easier application to arbitrary environments. Each model will be evaluated based on their performance on locomotion on bumpy landscapes. </p>
-              <br/>
-              <h2> Highlights </h2>
+              <h2><b>  Highlights </b></h2>
+              <p/>
               <ul>
-                <li> Implementation of deep reinforcement learning algorithms </li>
+                <h3> Goal </h3>
+                <p> Evaluate whether sampling from a Dirichlet distribution during the training process of DIAYN would improve the controller's ability to learn to execute diverse tasks compared to the categorical distribution </p>
+                <h3> Process </h3>
                 <ul>
-                  <li> <a href="https://arxiv.org/abs/1802.06070"> Diversity Is All You Need (DIAYN) </a> , a hierarchical reinforcement learning algorithm </li>
-                  <li> <a href="https://arxiv.org/abs/1707.06347"> Proximal Policy Optimization (PPO) </a>, a policy gradient algorithm </li>
+                  <li> Implemented deep reinforcement learning algorithms using PyTorch</li>
+                  <ul>
+                    <li> <a href="https://arxiv.org/abs/1802.06070"> Diversity Is All You Need (DIAYN) </a> , a hierarchical reinforcement learning algorithm </li>
+                    <ul>
+                      <li> Utilizes the categorical distribution </li>
+                    </ul>
+                    <li> <a href="https://arxiv.org/abs/1707.06347"> Proximal Policy Optimization (PPO) </a>, a policy gradient algorithm </li>
+                    <li> A modified DIAYN that utilizes Dirichlet distribution </li>
+                  </ul>
+                  <li> Compared the change in performance of conducting forward locomotion on rugged terrain between DIAYN and the modified DIAYN algorithm </li>
                 </ul>
-                <li> Use of Dirichlet distribution </li>
+                <h3> Task Environment </h3>
                 <ul>
-                  <li> DIAYN utilizes the categorical distribution for sampling one-hot vectors. </li>
-                  <li> Compared the change in performance of conducting tasks when Dirichlet distribution is utilized instead of the categorical distribution </li>
-                </ul>
-                <li> Physics simulation of bipedal robot </li>
-                <ul>
-                  <li> OpenAI Gym "BipedalWalker-v1 Hardcore" envrionment</li>
+                  <li> Physics simulation of bipedal robot </li>
+                  <ul>
+                    <li> OpenAI Gym "BipedalWalker-v1 Hardcore" envrionment</li>
+                  </ul>
                 </ul>
               </ul>
               <br/>
-              <h2> Algorithm Implementations </h2>
+              <h2> Introduction </h2>
+              <p> The application of robotic control with reinforcement learning on bumpy landscapes is a challenging task because of the necessity of generation of detailed movements. Although preliminary work, DIAYN, a hierarchical reinforcement learning algorithm, performs well on some environments, the complexity of generated tasks and its compatible environments can be limited. </p>
+              <p> We propose a solution to generate more diverse tasks and enable an easier application to arbitrary environments. Each model is evaluated based on their performance on locomotion on bumpy landscapes. </p>
               <br/>
-              <h3> Proximal Policy Optimization (PPO) </h3>
-              <p> PPO was used to train a deep neural network policy for conducting forward locomotion with a simulated bipedal robot. The resulting policy is as the followinig. </p>
-              <figure>
-                <img src={ppo} alt="BipedalWalker controlled by policy trained using PPO" style={{width:"100%"}}/>
-                <figcaption style={{textAlign: "center"}}> BipedalWalker controlled by policy trained using PPO </figcaption>
-              </figure>
-              <br/>
-              <h3> Diversity Is All You Need (DIAYN) </h3>
-              <p> DIAYN is an algorithm for acquiring diverse skills without manually defining a reward function. In the context of hierarchical reinforcement learning, the resulting policy trained using DIAYN can be used as the worker policy. The manager policy would output one-hot "skill vectors" to be fed to the worker policy, where the worker policy would execute a task associated with the fed vector. </p>
-              <p> Consequentially, to have the worker policy be able to conduct tasks given one-hot skill vectors, the training process of DIAYN consists of sampling one-hot vectors from the categorical distirbution.  </p>
-              <figure>
-                <img src={hrl_skill} alt="A skill vector associated with an individual task is sampled in the training process." style={{width:"100%"}}/>
-                <figcaption style={{textAlign: "center"}}> A skill vector associated with an individual task is sampled in the training process. </figcaption>
-              </figure>
-              <p> The following are notable skills acquired using DIAYN on the simulated bipedal robot. </p>
-              <figure>
-                <img src={diayn} alt="BipedalWalker skills acquired using DIAYN" style={{width:"100%"}}/>
-                <figcaption style={{textAlign: "center"}}> BipedalWalker skills acquired using DIAYN </figcaption>
-              </figure>
-              <br/>
-              <h3> Dirichlet DIAYN (Proposed Algorithm) </h3>
-              <p> The worker policy is trained to accept continuous skill vectors to execute tasks. To accomplish this, I proposed a strategy, where, during training, the skill vector is sampled from a Dirichlet distribution. Using the property of Dirichlet distribution, in which its shape can be significantly altered by changing the value of its hyperparameters, the shape of the skill distribution is gradually altered from those akin to the categorical distribution to the continuous uniform distribution.  </p>
-              <figure>
-                <img src={d_diayn_concept} alt="During the training process, Dirichlet distribution's hyperparameter is altered over time." style={{width:"100%"}}/>
-                <figcaption style={{textAlign: "center"}}> During the training process, Dirichlet distribution's hyperparameter is altered over time. </figcaption>
-              </figure>
-              <p> The following are notable skills acquired using Dirichelt DIAYN on the simulated bipedal robot. </p>
-              <figure>
-                <img src={d_diayn} alt="BipedalWalker skills acquired using Dirichlet DIAYN" style={{width:"100%"}}/>
-                <figcaption style={{textAlign: "center"}}> BipedalWalker skills acquired using Dirichlet DIAYN </figcaption>
-              </figure>
+              <h2> Methodology </h2>
+              <h2> (Algorithm Implementation) </h2>
+              <p/>
+              <ul>
+                <h3> Diversity Is All You Need (DIAYN) </h3>
+                <p> DIAYN is an algorithm for acquiring diverse skills without manually defining a reward function. In the context of hierarchical reinforcement learning, composed of the high-level manager policy and the low-level worker policy, DIAYN is used for training the worker policy. The manager policy outputs one-hot "skill vectors" to be fed to the worker policy. The worker policy executes a task associated with the fed skill vector. </p>
+                <p> Consequentially, to have the worker policy be able to conduct tasks given one-hot skill vectors, the training process of DIAYN consists of sampling one-hot vectors from the categorical distirbution.  </p>
+                <figure>
+                  <img src={hrl_skill} alt="A skill vector associated with an individual task is sampled in the training process." style={{width:"100%"}}/>
+                  <figcaption style={{textAlign: "center"}}> A skill vector associated with an individual task is sampled in the training process. </figcaption>
+                </figure>
+                <p> The following are notable skills acquired using DIAYN on OpenAI's simulated bipedal robot. </p>
+                <figure>
+                  <img src={diayn} alt="BipedalWalker skills acquired using DIAYN" style={{width:"100%"}}/>
+                  <figcaption style={{textAlign: "center"}}> BipedalWalker skills acquired using DIAYN </figcaption>
+                </figure>
+                <br/>
+                <h3> Proximal Policy Optimization (PPO) </h3>
+                <p> PPO was used for the manager policy in the aforementioned hierarchical reinforcement learning controller. </p>
+                <p> The implementation of PPO was validated by having it trained on forward locomotion with OpenAI's simulated bipedal robot. The resulting policy is as the following. </p>
+                <figure>
+                  <img src={ppo} alt="BipedalWalker controlled by policy trained using PPO" style={{width:"100%"}}/>
+                  <figcaption style={{textAlign: "center"}}> BipedalWalker controlled by policy trained using PPO </figcaption>
+                </figure>
+                <br/>
+                <h3> Dirichlet DIAYN (Modified DIAYN Algorithm) </h3>
+                <p> The worker policy is trained to accept continuous skill vectors to execute tasks. To accomplish this, a modified DIAYN algorithm, where, during training, the skill vector is sampled from a Dirichlet distribution. Using the property of Dirichlet distribution, in which its shape can be significantly altered by changing the value of its hyperparameters, the shape of the skill distribution is gradually altered from those akin to the categorical distribution to the continuous uniform distribution.  </p>
+                <figure>
+                  <img src={d_diayn_concept} alt="During the training process, Dirichlet distribution's hyperparameter is altered over time." style={{width:"100%"}}/>
+                  <figcaption style={{textAlign: "center"}}> During the training process, Dirichlet distribution's hyperparameter is altered over time. </figcaption>
+                </figure>
+                <p> The following are notable skills acquired using Dirichelt DIAYN on the simulated bipedal robot. </p>
+                <figure>
+                  <img src={d_diayn} alt="BipedalWalker skills acquired using Dirichlet DIAYN" style={{width:"100%"}}/>
+                  <figcaption style={{textAlign: "center"}}> BipedalWalker skills acquired using Dirichlet DIAYN </figcaption>
+                </figure>
+              </ul>
               <h2> Results </h2>
               <p> The policy loss curves for both algorithms are as the following. Both learning curves are seen to converge; however, DIAYN is able to find a more optimal solution. </p>
               <figure>
