@@ -21,7 +21,7 @@ function Home() {
                 <strong> AI Engineer / Researcher </strong>
               </h2>
               <h2 className="profession-name" style={{ paddingLeft: 50, textAlign: "left" }}>
-                <strong> Data Scientist </strong>
+                <strong> Simulation Data Scientist </strong>
               </h2>
             </Col>
 
