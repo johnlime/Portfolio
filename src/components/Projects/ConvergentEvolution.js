@@ -4,6 +4,8 @@ import 'katex/dist/katex.min.css';
 import Latex from 'react-latex-next';
 import Button from "react-bootstrap/Button";
 
+import pc1 from "../../Assets/Projects/convergent_evolution/pca_01.png"
+import pc2 from "../../Assets/Projects/convergent_evolution/pca_02.png"
 import pdf from "../../Assets/Projects/convergent_evolution/article.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { EmbedPDF } from "@simplepdf/react-embed-pdf";
@@ -40,7 +42,7 @@ function ConvergentEvolution() {
             }}
           >
             <Col md={10} style={{justifyContent: "left"}}>
-              <p>The following work was produced for the Spring 2024 term of CSYS6990A Data Science 2 in the University of Vermont. The PDF of the full paper is attached.</p>
+              <p>The following work was produced for the Spring 2024 term of CSYS6990A Data Science 2 in the University of Vermont. Improvements and modifications were made on April 30, 2025. The PDF of the full paper is attached.</p>
             </Col>
           </Row>
           <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -53,6 +55,11 @@ function ConvergentEvolution() {
                 paddingBottom: "50px",
               }}
             >
+              <figure>
+                <img src={pc1} alt="PC1-PC2 Bayesian inference" style={{width:"50%"}}/>
+                <img src={pc2} alt="PC2-PC3 Bayesian inference" style={{width:"50%"}}/>
+                <figcaption style={{textAlign: "center"}}> Plot of the principal components of all taxa for ceratopsian and extant quadrupedal clades and points sampled from the normal distributions fit to the 2 datasets </figcaption>
+              </figure>
               <h2> Goal </h2>
               <p> The detection and inference of the cause of convergence in anatomical features between phylogenetically distant taxa or clades is a topic of research in biology. </p>
 
@@ -82,27 +89,31 @@ function ConvergentEvolution() {
                 </ul>
                 <li> Bayesian Inference </li>
                 <ul>
-                  <li> Utilized Gibbs sampling to estimate the probability distribution of skull length, femur length, femur circumference, and humerus length across species of ceratopsians and extant quadrupedal mammals </li>
+                  <li> Constructed a Bayesian linear regression model to estimate the probability distribution of skull length, femur length, femur circumference, and humerus length across species of ceratopsians and extant quadrupedal mammals </li>
+                  <li> Model Evaluation </li>
+                  <ul>
+                    <li> Prior-predictive check </li>
+                    <li> Posterior-predictive check </li>
+                    <li> Convergence evaluation </li>
+                  </ul>
                 </ul>
                 <li> Statistical Significance and Confidence Interval </li>
                 <ul>
                   <li> 2 different metrics were used to evaluate the difference between the body proportions of the 2 clades to reduce the chance of p-hacking </li>
+                  <ul>
+                    <li> Kolmogorov-Smirnov test </li>
+                    <li> Mann-Whitney-Wilcoxon U-test </li>
+                  </ul>
                 </ul>
               </ul>
               <br/>
 
               <h2> Results </h2>
-
-              <ul>
-                <li> The log p-values for the null hypothesis, in which the mean of the distribution for the measurements for ceratopsians is in the distribution for the those of extant quadrupeds, is shown to have 95% statistical significance. </li>
-                <li> The 95% confidence intervals of each distribution are shown to not overlap, indicating that the 2 datasets are in different distributions. </li>
-              </ul>
+              <p> The log p-values for the null hypothesis, in which the mean of the distribution for the measurements for ceratopsians is in the distribution for the those of extant quadrupeds, is shown to NOT have 95% statistical significance. </p>
               <br/>
 
               <h2> Discussion </h2>
-              <p> The similarities in mean of head-body ratio between the ceratopsians and extant quadrupedal animals may indicate that the body size of a quadrupedal animal from both clades is affected by both its diet and the degree of thermoregulation its head is able to conduct. </p>
-
-              <p> A significant difference in phenotypic variation between the 2 clades, as indicated by the lack of overlap in the confidence intervals, may be caused by the difference in the environments between the mesozoic and cenozoic era. </p>
+              <p> A significant difference in phenotypic variation between the 2 clades, as indicated by the statistically significant difference in the parent distributions, may be caused by the difference in the environments between the mesozoic and cenozoic era. </p>
             </Col>
             <Col
               md={2}

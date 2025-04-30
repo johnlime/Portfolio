@@ -19,8 +19,7 @@ function Home2() {
               ABOUT ME
             </h1>
             <p className="home-about-body">
-              AI engineer and data scientist, with a background in
-              <b className="highlight"> deep reinforcement learning, evolutionary algorithms, agent-based modeling, and Bayesian statistics </b>. Interested in bringing unique approach to robotic control systems, video game AI behaviors, and simulations.
+              Simulation data scientist and AI engineer obsessed with utilizing simulations, computational models, or mathematical models in conjunction with data science and AI to help develop novel softwares, gain insight into real-world phenomena, and conduct good decision making. Has years of experience in multiple fields including AI, deep learning, robotic control systems, data science, computational modeling, and mathematical modeling.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
