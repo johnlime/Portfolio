@@ -5,6 +5,7 @@ import spring_creatures from "../../Assets/Projects/spring_creatures/square.gif"
 import lv_fitting from "../../Assets/Projects/lv_fitting/scatter_baseline.gif";
 import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca_02.png";
 import diayn from "../../Assets/Projects/diayn/diayn_00.gif";
+import armor_evolution from "../../Assets/Projects/armor_evolution/preynn_pae.png"
 
 function Projects() {
   return (
@@ -18,22 +19,22 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={5} className="project-card">
             <ProjectCard
+              imgPath={armor_evolution}
+              isBlog={true}
+              title="MASTER'S THESIS"
+              description="Investigate if armor (defensive weaponry) evolution in predators could lower the average evolutionary time until extinction in different predator-prey ecosystems using agent-based models and statistics"
+              tags="Agent-Based Modeling, Computational Biology, Evolution, Statistical Analysis, Simulation"
+              articleLink="#/masters-thesis"
+            />
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCard
               imgPath={convergent_evolution}
               isBlog={true}
               title="Bayesian Inference of Convergent Evolution in Quadrupeds"
               description="Evaluation of convergent evolution in body proportions between ceratopsians and extant quadrupeds using Bayesian inference"
               tags="Bayesian statistics, Principal Component Analysis, Regression, Biology"
               articleLink="#/convergent-evolution"
-            />
-          </Col>
-          <Col md={5} className="project-card">
-            <ProjectCard
-              imgPath={lv_fitting}
-              isBlog={true}
-              title="Lotka-Volterra Model Population Dynamics Prediction"
-              description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
-              tags="Mathematical Modeling, Regression, Ecology"
-              articleLink="#/lv-fitting"
             />
           </Col>
           <Col md={5} className="project-card">
@@ -56,6 +57,16 @@ function Projects() {
               tags="AI, Physics Simulation, Optimization, Procedural Generation"
               ghLink="https://github.com/johnlime/spring_creatures_experiment"
               articleLink="#/spring-creatures"
+            />
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCard
+              imgPath={lv_fitting}
+              isBlog={true}
+              title="Lotka-Volterra Model Population Dynamics Prediction"
+              description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
+              tags="Mathematical Modeling, Regression, Ecology"
+              articleLink="#/lv-fitting"
             />
           </Col>
         </Row>
