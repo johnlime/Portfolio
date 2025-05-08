@@ -8,6 +8,7 @@ import SpringCreatures from "./components/Projects/SpringCreatures";
 import LVFitting from "./components/Projects/LVFitting";
 import ConvergentEvolution from "./components/Projects/ConvergentEvolution";
 import DirichletDIAYN from "./components/Projects/DirichletDIAYN";
+import MastersThesis from "./components/Projects/ArmorEvolution"
 
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
@@ -42,6 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/masters-thesis" element={<MastersThesis />} />
           <Route path="/projects/spring-creatures" element={<SpringCreatures />} />
           <Route path="/projects/lv-fitting" element={<LVFitting />} />
           <Route path="/projects/convergent-evolution" element={<ConvergentEvolution />} />
