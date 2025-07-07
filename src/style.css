@@ -11,10 +11,10 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #ff5f57;
 }
 
-.purple {
+.highlight {
   color: var(--imp-text-color) !important;
 }
 
@@ -155,8 +155,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 1.4em;
+  width: 2.5em;
 }
 
 .navbar-nav .nav-link {
@@ -194,7 +194,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--imp-text-color);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -281,7 +281,7 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--imp-text-color);
 }
 
 .Typewriter__wrapper {
@@ -518,14 +518,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #db4942 !important;
+  border-color: #db4942 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #a3221c !important;
+  border-color: #a3221c !important;
 }
 .btn:focus {
   outline: none !important;
@@ -740,4 +740,10 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* New ones by mioto */
+.profession-name{
+  color: white;
+  padding-top: 20px;
 }

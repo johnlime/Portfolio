@@ -1,90 +1,72 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import spring_creatures from "../../Assets/Projects/spring_creatures/square.gif";
+import lv_fitting from "../../Assets/Projects/lv_fitting/scatter_baseline.gif";
+import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca_02.png";
+import diayn from "../../Assets/Projects/diayn/diayn_00.gif";
+import armor_evolution from "../../Assets/Projects/armor_evolution/preynn_pae.png"
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
+        <Row style={{ justifyContent: "center"}}>
+          <h1 className="project-heading">
+            <strong class="highlight"> Significant Works </strong>
+          </h1>
+        </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              imgPath={armor_evolution}
+              isBlog={true}
+              title="MASTER'S THESIS"
+              description="Investigate if armor (defensive weaponry) evolution in predators could lower the average evolutionary time until extinction in different predator-prey ecosystems using agent-based models and statistics"
+              tags="Agent-Based Modeling, Computational Biology, Evolution, Statistical Analysis, Simulation"
+              articleLink="#/masters-thesis"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              imgPath={convergent_evolution}
+              isBlog={true}
+              title="Bayesian Inference of Convergent Evolution in Quadrupeds"
+              description="Evaluation of convergent evolution in body proportions between ceratopsians and extant quadrupeds using Bayesian inference"
+              tags="Bayesian statistics, Principal Component Analysis, Regression, Biology"
+              articleLink="#/convergent-evolution"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              imgPath={diayn}
+              isBlog={true}
+              title="Dirichlet DIAYN"
+              description="Implemented the proximal policy optimization (PPO) and hierarchical reinforcement learning algorithm, Diversity Is All You Need (DIAYN) and examined the effect of utilizing Dirichlet distribution in DIAYN"
+              tags="Hierarchical Reinforcement Learning, Machine Learning, AI, Control Systems, Robotics"
+              ghLink="https://github.com/johnlime/RlkitExtension"
+              articleLink="#/diayn"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={spring_creatures}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Spring Creatures"
+              description="A system to procedurally generate a virtual creature, or an artificial life, in a 2 dimensional physics simulation that can conduct forward locomotion in an aquatic environment"
+              tags="AI, Physics Simulation, Optimization, Procedural Generation"
+              ghLink="https://github.com/johnlime/spring_creatures_experiment"
+              articleLink="#/spring-creatures"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={5} className="project-card">
             <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              imgPath={lv_fitting}
+              isBlog={true}
+              title="Lotka-Volterra Model Population Dynamics Prediction"
+              description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
+              tags="Mathematical Modeling, Regression, Ecology"
+              articleLink="#/lv-fitting"
             />
           </Col>
         </Row>
@@ -94,3 +76,5 @@ function Projects() {
 }
 
 export default Projects;
+
+// demoLink="https://chatify-49.web.app/"
