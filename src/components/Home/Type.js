@@ -1,6 +1,10 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
+/*
+I'M NOT USING THIS...IT'S TOO HARD TO SEE
+*/
+
 function Type() {
   return (
     <Typewriter
