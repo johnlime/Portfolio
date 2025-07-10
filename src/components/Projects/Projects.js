@@ -6,6 +6,7 @@ import lv_fitting from "../../Assets/Projects/lv_fitting/scatter_baseline.gif";
 import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca_02.png";
 import diayn from "../../Assets/Projects/diayn/diayn_00.gif";
 import armor_evolution from "../../Assets/Projects/armor_evolution/preynn_pae.png"
+import boid_optimized from "../../Assets/Projects/unity_crowd_ai/gif/boid-optimized.gif";
 
 function Projects() {
   return (
@@ -29,10 +30,20 @@ function Projects() {
           </Col>
           <Col md={5} className="project-card">
             <ProjectCard
+              imgPath={boid_optimized}
+              isBlog={true}
+              title="Unity Crowd AI"
+              description="Drastically boosted the performance of 2 computationally expensive crowd AI in Unity using C# optimization techniques"
+              tags="Game Development, Performance Optimization, 3D Simulation"
+              articleLink="#/unity-crowd-ai"
+            />
+          </Col>
+          <Col md={5} className="project-card">
+            <ProjectCard
               imgPath={convergent_evolution}
               isBlog={true}
               title="Bayesian Inference of Convergent Evolution in Quadrupeds"
-              description="Evaluation of convergent evolution in body proportions between ceratopsians and extant quadrupeds using Bayesian inference"
+              description="Uncovered a divergence in evolution of anatomical proportions between 2 phylogenetically distant taxa, extant quadrupedal animals and (extinct) ceratopsians, using Bayesian inference"
               tags="Bayesian statistics, Principal Component Analysis, Regression, Biology"
               articleLink="#/convergent-evolution"
             />
@@ -53,7 +64,7 @@ function Projects() {
               imgPath={spring_creatures}
               isBlog={false}
               title="Spring Creatures"
-              description="A system to procedurally generate a virtual creature, or an artificial life, in a 2 dimensional physics simulation that can conduct forward locomotion in an aquatic environment"
+              description="Formulated and implemented a novel system capable of procedurally generating structurally complex physics-simulated robots with muscles and limbs"
               tags="AI, Physics Simulation, Optimization, Procedural Generation"
               ghLink="https://github.com/johnlime/spring_creatures_experiment"
               articleLink="#/spring-creatures"
@@ -64,7 +75,7 @@ function Projects() {
               imgPath={lv_fitting}
               isBlog={true}
               title="Lotka-Volterra Model Population Dynamics Prediction"
-              description="Found that adding a quadratic term to the Lotka-Volterra model increases its prediction performance of population dynamics"
+              description="Proposed a modification to a mathematical model of population dynamics of predator-prey ecosystems, that exceeded the original algorithm in prediction accuracy"
               tags="Mathematical Modeling, Regression, Ecology"
               articleLink="#/lv-fitting"
             />
