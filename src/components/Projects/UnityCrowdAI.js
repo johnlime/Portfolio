@@ -111,7 +111,6 @@ function UnityCrowdAI() {
               <p> To my knowledge, KSOM has not been utilized in the context of NPC AI development in games. The neurons can be interpreted as the NavMeshAgents and the weight vectors can be interpreted as the positions of the NavMeshAgents. KSOM would enable the NavMeshAgents to distribute themselves across a user-defined area on the NavMesh in a user-defined formation. </p>
               <p> Each weight update, or the process starting from sampling from the observation space to altering the weight values of both the selected and neighboring neurons, can be grouped up as a job. The performance for the execution of multiple of these jobs can be reduced using multithreading. </p>
               <p> Additionally, similarly to the boid implementation, the destinations for the NavMeshAgents are updated using coroutines. </p>
-              <p> The parallelization is done </p>
             </ul>
             <br/>
             <h2> Experiment Settings </h2>
