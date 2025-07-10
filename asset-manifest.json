@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.48135443.css",
-    "main.js": "/Portfolio/static/js/main.ff890825.js",
+    "main.js": "/Portfolio/static/js/main.4af09a11.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/boid-optimized.gif": "/Portfolio/static/media/boid-optimized.fe6303a67b3fbd74bab5.gif",
+    "static/media/family-optimized.gif": "/Portfolio/static/media/family-optimized.8d95f7584520d8fdca32.gif",
+    "static/media/boid-unoptimized.gif": "/Portfolio/static/media/boid-unoptimized.5cd8c70ab30aa4cf4d77.gif",
+    "static/media/family-unoptimized.gif": "/Portfolio/static/media/family-unoptimized.7af3d3362bc3d7945d19.gif",
     "static/media/ppo.gif": "/Portfolio/static/media/ppo.c78004022073b99a56c3.gif",
     "static/media/thesis_master_of_science_mioto_takahashi.pdf": "/Portfolio/static/media/thesis_master_of_science_mioto_takahashi.a692aad6ce09ef57f945.pdf",
     "static/media/showcase.gif": "/Portfolio/static/media/showcase.98fca6c4f149addb5dbe.gif",
@@ -100,12 +104,12 @@
     "static/media/pre.svg": "/Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/Portfolio/index.html",
     "main.48135443.css.map": "/Portfolio/static/css/main.48135443.css.map",
-    "main.ff890825.js.map": "/Portfolio/static/js/main.ff890825.js.map",
+    "main.4af09a11.js.map": "/Portfolio/static/js/main.4af09a11.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48135443.css",
-    "static/js/main.ff890825.js"
+    "static/js/main.4af09a11.js"
   ]
 }
