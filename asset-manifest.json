@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.48135443.css",
-    "main.js": "/Portfolio/static/js/main.292a4515.js",
+    "main.js": "/Portfolio/static/js/main.0d5a3706.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/boid-optimized.gif": "/Portfolio/static/media/boid-optimized.fe6303a67b3fbd74bab5.gif",
     "static/media/family-optimized.gif": "/Portfolio/static/media/family-optimized.8d95f7584520d8fdca32.gif",
     "static/media/boid-unoptimized.gif": "/Portfolio/static/media/boid-unoptimized.5cd8c70ab30aa4cf4d77.gif",
+    "static/media/trike-boid.gif": "/Portfolio/static/media/trike-boid.aadc16b774b80e915c84.gif",
     "static/media/family-unoptimized.gif": "/Portfolio/static/media/family-unoptimized.7af3d3362bc3d7945d19.gif",
     "static/media/ppo.gif": "/Portfolio/static/media/ppo.c78004022073b99a56c3.gif",
     "static/media/thesis_master_of_science_mioto_takahashi.pdf": "/Portfolio/static/media/thesis_master_of_science_mioto_takahashi.a692aad6ce09ef57f945.pdf",
@@ -16,7 +17,9 @@
     "static/media/square.gif": "/Portfolio/static/media/square.4fc8bd373e150869b894.gif",
     "static/media/diayn_00.gif": "/Portfolio/static/media/diayn_00.37cd353ca913def0687e.gif",
     "static/media/dynamics.png": "/Portfolio/static/media/dynamics.808f174b1036d009cf4f.png",
+    "static/media/triceratops-sub.png": "/Portfolio/static/media/triceratops-sub.a67dbadcf064e85ed8d8.png",
     "static/media/article.pdf": "/Portfolio/static/media/article.e297a04bdc7f71b8a5b9.pdf",
+    "static/media/triceratops-original.png": "/Portfolio/static/media/triceratops-original.e6ea4712a5076042d9ec.png",
     "static/media/evolve.png": "/Portfolio/static/media/evolve.f66554726eb56ac3fb64.png",
     "static/media/diayn_02.gif": "/Portfolio/static/media/diayn_02.5fc04f7eeda2595354f8.gif",
     "static/media/hrl.gif": "/Portfolio/static/media/hrl.71cfacfd672258807c9c.gif",
@@ -28,12 +31,15 @@
     "static/media/result_policy_loss.png": "/Portfolio/static/media/result_policy_loss.e82de5cde1cada4ff78c.png",
     "static/media/result_reward.png": "/Portfolio/static/media/result_reward.984bd7c071cc95162d50.png",
     "static/media/d_diayn.png": "/Portfolio/static/media/d_diayn.9ca585fdd50ba9778969.png",
+    "static/media/dag_nodes.png": "/Portfolio/static/media/dag_nodes.4fcd28ca268c0f52b019.png",
+    "static/media/dag_nodes_branch.png": "/Portfolio/static/media/dag_nodes_branch.b550bf16e6346ef1c02a.png",
     "static/media/hrl_skill.png": "/Portfolio/static/media/hrl_skill.a2749110c12eca83a744.png",
     "static/media/boid-optimized.png": "/Portfolio/static/media/boid-optimized.781027bdb07f7b70f205.png",
     "static/media/boid-unoptimized.png": "/Portfolio/static/media/boid-unoptimized.41721841f4767f05f211.png",
     "static/media/family-unoptimized.png": "/Portfolio/static/media/family-unoptimized.0bc1a1175ed1de6cf990.png",
     "static/media/family-optimized.png": "/Portfolio/static/media/family-optimized.67462f68cfc486790fa0.png",
     "static/media/mioto_takahashi_resume.pdf": "/Portfolio/static/media/mioto_takahashi_resume.841f8be0ba1c917c4e67.pdf",
+    "static/media/gltf_node_example.png": "/Portfolio/static/media/gltf_node_example.4d1b98e27a4bef323447.png",
     "static/media/KaTeX_AMS-Regular.ttf": "/Portfolio/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/Portfolio/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
     "static/media/KaTeX_Main-Bold.ttf": "/Portfolio/static/media/KaTeX_Main-Bold.8169508bf58f8bd92ad8.ttf",
@@ -104,12 +110,12 @@
     "static/media/pre.svg": "/Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/Portfolio/index.html",
     "main.48135443.css.map": "/Portfolio/static/css/main.48135443.css.map",
-    "main.292a4515.js.map": "/Portfolio/static/js/main.292a4515.js.map",
+    "main.0d5a3706.js.map": "/Portfolio/static/js/main.0d5a3706.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48135443.css",
-    "static/js/main.292a4515.js"
+    "static/js/main.0d5a3706.js"
   ]
 }
