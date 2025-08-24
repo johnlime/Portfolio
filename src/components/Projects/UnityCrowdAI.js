@@ -11,6 +11,7 @@ import family_unoptimized from "../../Assets/Projects/unity_crowd_ai/gif/family-
 import family_unoptimized_performance from "../../Assets/Projects/unity_crowd_ai/png/family-unoptimized.png";
 import family_optimized from "../../Assets/Projects/unity_crowd_ai/gif/family-optimized.gif";
 import family_optimized_performance from "../../Assets/Projects/unity_crowd_ai/png/family-optimized.png";
+import trike_boid from "../../Assets/Projects/unity_crowd_ai/gif/trike-boid.gif";
 
 // const LATEX_MACROS = { "\\f": "#1f(#2)" };
 
@@ -28,7 +29,7 @@ function UnityCrowdAI() {
           backgroundColor: "white"
         }}>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <p><b> [Game Development, Performance Optimization, 3D Simulation] </b></p>
+          <p><b> [Game Development, Performance Optimization, 3D Simulation, JSON, glTF] </b></p>
           <h1> Unity Crowd AI </h1>
         </Row>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -71,17 +72,39 @@ function UnityCrowdAI() {
               paddingBottom: "50px",
             }}
           >
+            <figure>
+              <img src={trike_boid} alt="Demo of a herd of 300 triceratops controlled by boid" style={{width:"100%"}}/>
+              <figcaption style={{textAlign:"center"}}> Demonstration of a herd of 300 triceratops controlled by boid </figcaption>
+            </figure>
+          </Col>
+        </Row>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={8}
+            style={{
+              justifyContent: "left",
+              textAlign: "left",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
             <h2> Goals </h2>
             <ul>
               <li> Proposed a novel method for utilizing Kohonen’s self organizing map (KSOM) for enabling a group of NPC AI NavMeshAgents to automatically organize themselves in user-specified formations </li>
               <li> Drastically boosted the performance of 2 computationally expensive crowd AI in Unity using C# optimization techniques </li>
+              <li> Efficiently customized an imported 3D model and animation asset by analyzing a (JSON-formatted) glTF file using Python and a network analysis software NetworkX </li>
             </ul>
             <br/>
             <h2> Highlights </h2>
             <ul>
               <li> Improved the frame rate per second (FPS) of an implementation of boid with 5000 NavMeshAgents from  15 FPS to 100 FPS using Unity coroutines, or main thread time slicing </li>
               <li> Improved the FPS of KSOM with 50 groups consisting of 6 NavMeshAgents per group from 3 FPS to 100 FPS using the Unity parallel job system, or multithreading </li>
+              <li> Analyzed the inner tree structure of a (JSON-formatted) glTF file containing multiple 3D models using NetworkX  </li>
+              <li> Separated the 3 models and their animations into 3 separate self-contained glTF files using Python </li>
             </ul>
+            <br/>
+            <h2> glTF Analysis and Separation </h2>
+            <p> The details for the analysis and separation of the glTF file is on <a href="Portfolio#/gltf-json-analysis"> this page </a>. </p>
             <br/>
             <h2> Background and Motivation </h2>
             <p/>
@@ -153,6 +176,10 @@ function UnityCrowdAI() {
               <img src={family_optimized_performance} alt="Performance of optimized 50 groups of 5 NavMeshAgents" style={{width:"100%"}}/>
               <figcaption style={{textAlign:"center"}}> Time series data of the FPS of optimized 50 groups of 5 NavMeshAgents in FPS. The average FPS is 100 FPS. </figcaption>
             </figure>
+            <br/>
+            <h2> Imported Asset </h2>
+            <p> Kreepetka_pangea. (2025) Triceratops (Adolt, Sub, Juv). <i> Sketchfab </i>. </p>
+            <p> <a href="https://sketchfab.com/3d-models/triceratops-adolt-subjuv-10a9a22e05094cf391da7774cd5275da"> https://sketchfab.com/3d-models/triceratops-adolt-subjuv-10a9a22e05094cf391da7774cd5275da </a> </p>
             <br/>
             <h2> References </h2>
             <ul>

@@ -6,7 +6,7 @@ import lv_fitting from "../../Assets/Projects/lv_fitting/scatter_baseline.gif";
 import convergent_evolution from "../../Assets/Projects/convergent_evolution/pca_02.png";
 import diayn from "../../Assets/Projects/diayn/diayn_00.gif";
 import armor_evolution from "../../Assets/Projects/armor_evolution/preynn_pae.png"
-import boid_optimized from "../../Assets/Projects/unity_crowd_ai/gif/boid-optimized.gif";
+import boid_optimized from "../../Assets/Projects/unity_crowd_ai/gif/trike-boid.gif";
 
 function Projects() {
   return (
@@ -34,7 +34,7 @@ function Projects() {
               isBlog={true}
               title="Unity Crowd AI"
               description="Drastically boosted the performance of 2 computationally expensive crowd AI in Unity using C# optimization techniques"
-              tags="Game Development, Performance Optimization, 3D Simulation"
+              tags="Game Development, Performance Optimization, 3D Simulation, JSON, glTF"
               articleLink="#/unity-crowd-ai"
             />
           </Col>
