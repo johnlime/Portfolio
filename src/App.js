@@ -10,6 +10,7 @@ import ConvergentEvolution from "./components/Projects/ConvergentEvolution";
 import DirichletDIAYN from "./components/Projects/DirichletDIAYN";
 import MastersThesis from "./components/Projects/ArmorEvolution"
 import UnityCrowdAI from "./components/Projects/UnityCrowdAI"
+import GLTFAnalysis from "./components/Projects/GLTFAnalysis"
 
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
@@ -50,6 +51,7 @@ function App() {
           <Route path="/convergent-evolution" element={<ConvergentEvolution />} />
           <Route path="/diayn" element={<DirichletDIAYN />} />
           <Route path="/unity-crowd-ai" element={<UnityCrowdAI />} />
+          <Route path="/gltf-json-analysis" element={<GLTFAnalysis />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
