@@ -104,7 +104,7 @@ function UnityCrowdAI() {
             </ul>
             <br/>
             <h2> glTF Analysis and Separation </h2>
-            <p> The details for the analysis and separation of the glTF file is on <a href="Portfolio#/gltf-json-analysis"> this page </a>. </p>
+            <p> The details for the analysis and separation of the glTF file is on <a href="#/gltf-json-analysis"> this page </a>. </p>
             <br/>
             <h2> Background and Motivation </h2>
             <p/>
