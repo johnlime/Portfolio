@@ -143,38 +143,38 @@ function UnityCrowdAI() {
             <br/>
             <h2> Results </h2>
             <p/>
-            <p> The results are as below. The optimized algorithms performed significantly better than the unoptimized alternatives. Additionally, group formation behaviors were successfully exhibited in the optimized version of the KSOM algorithm, correctly showing the lattice structure as described before. </p>
+            <p> The results are as below. The optimized algorithms performed significantly better than the unoptimized alternatives in terms of the FPS. Additionally, group formation behaviors were successfully exhibited in the optimized version of the KSOM algorithm, correctly showing the lattice structure as described before. </p>
             <figure>
               <img src={boid_unoptimized} alt="Demo of unoptimized 5000 boid NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Demonstration of unoptimized 5000 boid NavMeshAgents </figcaption>
+              <figcaption style={{textAlign:"center"}}> Demonstration of unoptimized 5000 boid NavMeshAgents rendered in 15 FPS </figcaption>
             </figure>
             <figure>
               <img src={boid_unoptimized_performance} alt="Performance of unoptimized 5000 boid NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of unoptimized 5000 boid NavMeshAgents. The average is seen to be less than 15 FPS. </figcaption>
+              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of unoptimized 5000 boid NavMeshAgents over the course of 300 frames. The x-axis is the frames and the y-axis is the time it took to render each frame. The average is seen to be less than 15 FPS. </figcaption>
             </figure>
             <figure>
               <img src={boid_optimized} alt="Demo of optimized 5000 boid NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Demonstration of optimized 5000 boid NavMeshAgents </figcaption>
+              <figcaption style={{textAlign:"center"}}> Demonstration of optimized 5000 boid NavMeshAgents rendered in 100 FPS </figcaption>
             </figure>
             <figure>
               <img src={boid_optimized_performance} alt="Performance of optimized 5000 boid NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of optimized 5000 boid NavMeshAgents. The average framerate is seen to be  100 FPS. </figcaption>
+              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of optimized 5000 boid NavMeshAgents over the course of 300 frames. The x-axis is the frames and the y-axis is the time it took to render each frame. The average framerate is seen to be  100 FPS. </figcaption>
             </figure>
             <figure>
               <img src={family_unoptimized} alt="Demo of unoptimized 50 groups of 5 NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Demonstration of unoptimized 50 groups of 5 NavMeshAgents </figcaption>
+              <figcaption style={{textAlign:"center"}}> Demonstration of unoptimized 50 groups of 5 NavMeshAgents rendered in 5 FPS </figcaption>
             </figure>
             <figure>
               <img src={family_unoptimized_performance} alt="Performance of unoptimized 50 groups of 5 NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of unoptimized 50 groups of 5 NavMeshAgents. The average FPS is 3 FPS. </figcaption>
+              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of unoptimized 50 groups of 5 NavMeshAgents over the course of 300 frames. The x-axis is the frames and the y-axis is the time it took to render each frame. The average FPS is 3 FPS. </figcaption>
             </figure>
             <figure>
               <img src={family_optimized} alt="Demo of optimized 50 groups of 5 NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Demonstration of optimized 50 groups of 5 NavMeshAgents </figcaption>
+              <figcaption style={{textAlign:"center"}}> Demonstration of optimized 50 groups of 5 NavMeshAgents rendered in 100 FPS </figcaption>
             </figure>
             <figure>
               <img src={family_optimized_performance} alt="Performance of optimized 50 groups of 5 NavMeshAgents" style={{width:"100%"}}/>
-              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of optimized 50 groups of 5 NavMeshAgents in FPS. The average FPS is 100 FPS. </figcaption>
+              <figcaption style={{textAlign:"center"}}> Time series data of the FPS of optimized 50 groups of 5 NavMeshAgents in FPS over the course of 300 frames. The x-axis is the frames and the y-axis is the time it took to render each frame. The average FPS is 100 FPS. </figcaption>
             </figure>
             <br/>
             <h2> Imported Asset </h2>
