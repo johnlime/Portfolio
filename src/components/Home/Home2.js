@@ -19,7 +19,7 @@ function Home2() {
               ABOUT ME
             </h1>
             <p className="home-about-body">
-              Simulation data scientist and AI engineer obsessed with utilizing simulations, computational models, or mathematical models in conjunction with data science and AI to help develop novel softwares, gain insight into real-world phenomena, and conduct good decision making. Has years of experience in multiple fields including AI, deep learning, robotic control systems, data science, computational modeling, and mathematical modeling.
+            Game programmer, data scientist, and AI engineer with years of experience in conducting research, developing softwares, and mentoring students in machine learning, AI, game development, computational simulation models, and statistical models. I have a proven track record of achieving high pass rates in classes that I have tutored and producing significant results in various projects using Python, C#, game engines, etc. Additionally, my background in conducting sound design for theatrical plays demonstrates my ability to collaborate with teams and enhance overall experiences. With a focus on research, software development, and education, I bring a unique blend of technical skills and creative expertise to the table.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
